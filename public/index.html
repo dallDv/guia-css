@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Selectores</title>
+	<link rel="stylesheet" href="../style/index-global.css" />
+	<link rel="stylesheet" href="../style//index-theme.css">
+</head>
+
+<body>
+	<article class="hiro-image">
+		<div>
+			<h1>CSS Guia</h1>
+			<p>
+				CSS, en español Hojas de estilo en cascada, es un lenguaje de diseño gráfico para definir y crear la
+				presentación de un documento estructurado escrito en un lenguaje de marcado.
+				<br>
+				<br>
+				<a href="https://jonmircha.com/" class="link">Maestro Jonmircha</a>
+			</p>
+		</div>
+	</article>
+	<header class="header">
+		<div><a href="index.html#index">Indice</a></div>
+	</header>
+	<hr id="index" style="visibility: hidden; margin-bottom: 1rem;">
+	<article class="article index">
+		<ul>
+			<li><a href="index.html#partes">Partes</a></li>
+			<li><a href="index.html#selectores">Selectores</a></li>
+			<li><a href="index.html#selectores-atributo">Sekectires de atributo</a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+			<li><a href="index.html#"></a></li>
+		</ul>
+	</article>
+	<article class="article">
+		<hr id="partes">
+		<section class="theme">
+			<h2>Partes</h2>
+			<span>
+				<div>
+					<pre>
+<strong class="selector">selector</strong> {
+	<strong class="property">property</strong>: <strong class="function">function</strong>( <strong class="argument">argument</strong> );
+}
+						</pre>
+					<pre>
+<strong class="tag">tag <strong class="attribute">attribute="<strong class="value">value</strong>"</strong></strong> content <strong class="tag">/tag</strong>
+						</pre>
+				</div>
+				<div>
+					<div>
+						<p>
+							content
+						</p>
+					</div>
+			</span>
+			</div>
+		</section>
+
+		<hr id="selectores" />
+		<section class="theme selectores">
+			<h2>Selectores</h2>
+			<h3>Etiquetas</h3>
+			<span>
+				<div>
+					<pre>
+<strong class="selector">p</strong> {
+	color: red;
+}
+						</pre>
+					<pre>
+<strong class="tag">p</strong> lorem <strong class="tag">/p</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="etiquetas">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ea voluptates similique ducimus eveniet
+							iste dicta esse distinctio, neque consectetur reiciendis architecto totam rerum eum sint nisi doloremque
+							magnam vero!
+						</p>
+					</div>
+				</div>
+			</span>
+			<h3>Identificadores</h3>
+			<p> Buscan un elemento basado en el contenido del atributo id. El atributo ID del elemento seleccionado debe
+				coincidir exactamente con el valor dado en el selector.</p>
+			<span>
+				<div>
+					<pre>
+<strong class="selector">#text-color-red</strong> {
+	color: red;
+}
+						</pre>
+					<pre>
+<strong class="tag-">p <strong class="attribute">id=<strong class="value">"text-color-red"</strong></strong></strong> lorem <strong class="tag-">p</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="identificadores">
+						<p id="text-color-red">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et nihil veritatis nam! Tenetur, nisi deserunt.
+							Dolorem tempora quam, iure commodi velit facilis eaque laboriosam. Quam, autem. Dicta consequatur iure
+							impedit.
+						</p>
+					</div>
+				</div>
+			</span>
+			<h3>Clases</h3>
+			<p>Los selectores de clase buscan un elemento basado en el contenido de su atributo class. El atributo class está
+				definido como una lista de elementos separados por espacio, y uno de esos elementos debe coincidir exactamente
+				con el nombre de clase dado en el selector.</p>
+			<span>
+				<div>
+					<pre>
+<strong class="selector">.text-color-red</strong> {
+	color: red;
+}
+						</pre>
+					<pre>
+<strong class="tag-">p <strong class="attribute">class=<strong class="value">text-color-red</strong></strong></strong> lorem <strong class="tag-">/p</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="clases">
+						<p class="text-color-red">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque corporis illum ab consectetur
+							harum aspernatur reiciendis vel vero veniam dolorem enim, suscipit eos. Obcaecati omnis delectus
+							accusantium quod totam?
+						</p>
+					</div>
+				</div>
+			</span>
+			<h3>Hijos Directos</h3>
+			<p>El combinador > separa a dos selectores y busca solo a los elementos que coindicen con el segundo selector y
+				que son hijos directos del primero</p>
+			<span>
+				<div>
+					<pre>
+ul <strong class="selector">> </strong>li {
+	color: red;
+}
+						</pre>
+					<pre>
+<strong class="tag-">ul</strong>
+	<strong class="tag-">li</strong> Manzana <strong class="tag-">/li</strong> 
+	<strong class="tag-">li</strong> Pera <strong class="tag-">/li</strong> 
+	<strong class="tag-">li</strong> Platano <strong class="tag-">/li</strong> 
+<strong class="tag-">/ul</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="hijos-directos">
+						<ul>
+							<li>Manzana</li>
+							<li>Pera</li>
+							<li>Platano</li>
+						</ul>
+					</div>
+				</div>
+			</span>
+			<h3>Hijos Decendientes</h3>
+			<p>La expresión busca elementos que coinciden con el segundo selector y que tienen algun ancestro que coindice con
+				el primero, sin importar el nivel de separación que tengan dentro del DOM.</p>
+			<span>
+				<div>
+					<pre>
+ul strong {
+	background-color: red;
+}
+						</pre>
+					<pre>
+<strong class="tag-">ul</strong>
+	<strong class="tag-">li</strong>
+		<strong class="tag-">strong</strong> Manzana <strong class="tag-">/strong</strong>
+	<strong class="tag-">/li</strong> 
+	<strong class="tag-">li</strong>
+		<strong class="tag-">strong</strong> Pera <strong class="tag-">/strong</strong>
+	<strong class="tag-">/li</strong> 
+	<strong class="tag-">li</strong>
+		<strong class="tag-">strong</strong> Platano <strong class="tag-">/strong</strong>
+	<strong class="tag-">/li</strong> 
+<strong class="tag-">/ul</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="hijos-decendientes">
+						<ul>
+							<li><strong>Manzana</strong></li>
+							<li><strong>Pera</strong></li>
+							<li><strong>Platano</strong></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+			<h3>Hermanos Generales</h3>
+			<p>
+				El combinador ~ separa dos selectores y selecciona el segundo elemento sólo si está precedido por el primero y
+				ambos comparten un padre común.
+			</p>
+			<span>
+				<div>
+					<pre>
+.platano <strong class="selector">~</strong> li {
+	color: red;
+}
+						</pre>
+					<pre>
+<strong class="tag-">ul</strong>
+	<strong class="tag-">li</strong> Manzana<strong class="tag-">/li</strong>
+	<strong class="tag-">li</strong> Pera <strong class="tag-">/li</strong>
+	<strong class="tag-">li clase="platano"</strong> Platano <strong class="tag-">/li</strong>
+	<strong class="tag-">li</strong> Sandia <strong class="tag-">/li</strong>
+	<strong class="tag-">li</strong> Naranja <strong class="tag-">/li</strong>
+<strong class="tag-">/ul</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="hermanos-generales">
+						<ul>
+							<li>Manzana</li>
+							<li>Pera</li>
+							<li class="platano">Platano</li>
+							<li>Sandia</li>
+							<li>Naranja</li>
+						</ul>
+					</div>
+				</div>
+			</span>
+			<h3>
+				Hermanos Adyacentes.
+			</h3>
+			<p>
+				Sólo seleccionará un elemento especificado que esté inmediatamente después de otro elemento especificado
+			</p>
+			<span>
+				<div>
+					<pre>
+.platano <strong class="selector">+</strong> li {
+	color: red;
+}
+						</pre>
+					<pre>
+<strong class="tag-">ul</strong>
+	<strong class="tag-">li</strong> Manzana<strong class="tag-">/li</strong>
+	<strong class="tag-">li</strong> Pera <strong class="tag-">/li</strong>
+	<strong class="tag-">li clase="platano"</strong> Platano <strong class="tag-">/li</strong>
+	<strong class="tag-">li</strong> Sandia <strong class="tag-">/li</strong>
+	<strong class="tag-">li</strong> Naranja <strong class="tag-">/li</strong>
+<strong class="tag-">/ul</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="hermanos-adyacentes">
+						<ul>
+							<li>Manzana</li>
+							<li>Pera</li>
+							<li class="platano">Platano</li>
+							<li>Sandia</li>
+							<li>Naranja</li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</section>
+		<hr id="selectores-atributo">
+		<section class="theme selectores-atributo">
+			<h2>Selectores de Atributo</h2>
+			<h3>[attr]</h3>
+			<p>Selecciona los elementos que tienen el atributo <i>attr</i>.</p>
+			<span>
+				<div>
+					<pre>
+input<strong class="selector">[ <strong class="attribute">required</strong> ]</strong> {
+	background-color: red;
+}
+					</pre>
+					<pre>
+<strong class="tag-">form<strong class="attribute"></strong></strong>
+	<strong class='tag-'>input <strong class='attribute'>type</strong>=<strong class='value'>text</strong> <strong class='attribute'>required</strong></strong>
+	<strong class='tag-'>br</strong>
+	<strong class='tag-'>input <strong class='attribute'>type</strong>=<strong class='value'>text</strong></strong>
+	<strong class='tag-'>input <strong class='attribute'>type</strong>=<strong class='value'>submit</strong></strong>
+<strong class="tag-">/form</strong>
+					</pre>
+				</div>
+				<div>
+					<div class="attr">
+						<form>
+							<input type="text" required>
+							<br>
+							<input type="text">
+							<input type="submit">
+						</form>
+					</div>
+				</div>
+			</span>
+
+			<h3>[attr=value]</h3>
+			<p>Selecciona los elementos cuyo atributo <i>attr</i> tenga exactamente el valor <i>value</i>.</p>
+			<span>
+				<div>
+					<pre>
+input[ type="submit" ] {
+	background-color: green;
+}
+						</pre>
+					<pre>
+<strong class='tag-'>form</strong>
+	<strong class='tag-'>input <strong class='attribute'>type</strong>=<strong class='value'>'text'</strong></strong>
+	<strong class="tag-">br</strong>
+	<strong class='tag-'>input <strong class='attribute'>type</strong>=<strong class='value'>'text'</strong></strong>
+	<strong class='tag-'>input <strong class='attribute'>type</strong>=<strong class='value'>'submit'</strong></strong>
+<strong class='tag-'>form</strong>
+						</pre>
+				</div>
+				<div>
+					<div class="attr-value">
+						<form>
+							<input type="text">
+							<br>
+							<input type="text">
+							<input type="submit">
+						</form>
+					</div>
+				</div>
+			</span>
+
+			<h3>[attr~=value]</h3>
+			<p>Selecciona los elementos cuyo atributo attr tenga por valor una lista de palabras separadas por espacios, una
+				de las cuales sea value.</p>
+
+			<h3>[attr|=value]</h3>
+			<p>Selecciona los elementos cuyo atributo attr tenga exactamente el valor value o empiece por value seguido de un
+				guión -.</p>
+
+			<h3>[attr^=value]</h3>
+			<p>Selecciona los elementos cuyo atributo attr tenga un valor prefijado por value.</p>
+
+			<h3>[attr$=value]</h3>
+			<p>Selecciona los elementos cuyo atributo attr cuyo valor tiene el sufijo (seguido) de value.</p>
+
+			<h3>[attr*=value]</h3>
+			<p>Selecciona los elementos cuyo atributo attr tenga un valor que contenga value.</p>
+		</section>
+	</article>
+</body>
+
+</html>

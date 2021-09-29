@@ -1,0 +1,268 @@
+html {
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+hr {
+  margin: 1rem;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  font-size: 16px;
+  box-sizing: inherit;
+  margin: 0;
+}
+
+.hiro-image {
+  width: 100%;
+  height: 92vh;
+
+  margin: 0;
+
+  background-image: linear-gradient(#2e4053, #212f3c);
+}
+
+.hiro-image > div {
+  text-align: center;
+
+  color: white;
+
+  width: 50%;
+  height: 50%;
+
+  padding: 1rem;
+
+  /* background-color: #fff3; */
+
+  position: relative;
+  top: 20vh;
+  left: 25vw;
+}
+
+.hiro-image > div > p {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.hiro-image .link {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #212f3c;
+  text-align: center;
+
+  padding: 0.8rem;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 999;
+  height: 8vh;
+  border-bottom: medium solid black;
+}
+
+.header a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  display: inline-block;
+}
+
+.index a {
+  text-decoration: none;
+  color: black;
+}
+.index a:visited {
+  color: #f39c12;
+}
+
+.article {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+
+  padding: 2rem;
+}
+
+.theme > *:not(span) {
+  margin-top: 1rem;
+}
+
+.theme > h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.theme > span {
+  display: flex;
+  color: white;
+}
+.theme span > * {
+  background-color: #2e4053;
+
+  width: 48%;
+  height: 30rem;
+
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: medium solid black;
+  border-radius: 1rem;
+}
+
+.theme > span > div > * {
+  background-color: #212f3c;
+
+  overflow: auto;
+
+  border: medium solid black;
+  border-radius: 0.5rem;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  padding: 1rem;
+
+  position: relative;
+}
+
+.theme > span > div > pre {
+  height: 46%;
+  margin: 2%;
+}
+
+.theme > span > div > div {
+  height: 95%;
+  margin: 2%;
+}
+.theme > span > div > div a {
+  color: white;
+}
+
+.theme > span > div > *::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.theme > span > div > *::-webkit-scrollbar-thumb {
+  background-color: #f39c12;
+  border-radius: 0.5rem;
+}
+
+.theme > span > div > pre:first-child::before {
+  content: 'CSS';
+
+  color: #f39c12;
+  font-size: 0.7rem;
+
+  margin: 0.2rem;
+
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+}
+
+.theme > span > div > pre:last-child::before {
+  content: 'HTML';
+
+  color: #f39c12;
+  font-size: 0.7rem;
+
+  margin: 0.2rem;
+
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+}
+
+.theme > span > div > div::before {
+  content: 'Render';
+
+  color: #f39c12;
+  font-size: 0.7rem;
+
+  margin: 0.2rem;
+
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+}
+
+.tag,
+.tag-,
+.attribute,
+.value,
+.content,
+.selector,
+.property,
+.function,
+.argument {
+  font-weight: normal;
+}
+
+.tag {
+  color: skyblue;
+}
+
+.tag::before,
+.tag-::before {
+  content: '<';
+}
+
+.tag::after,
+.tag-::after {
+  content: '>';
+}
+
+.attribute {
+  color: sandybrown;
+}
+
+.value {
+  color: yellowgreen;
+}
+
+.content {
+  font-weight: 600;
+}
+
+.selector {
+  color: gold;
+}
+
+.property {
+  color: skyblue;
+}
+
+.function {
+  color: rebeccapurple;
+}
+
+.argument {
+  color: tomato;
+}

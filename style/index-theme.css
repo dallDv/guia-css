@@ -1,0 +1,44 @@
+/* 
+Sintaxis:
+tema area-trabajo elemento {
+	property: argument
+}
+
+*/
+
+/* Selectores */
+.selectores .etiquetas p {
+  color: red;
+}
+
+.selectores .identificadores #text-color-red {
+  color: red;
+}
+
+.selectores .clases .text-color-red {
+  color: red;
+}
+
+.selectores .hijos-directos ul > li {
+  color: red;
+}
+
+.selectores .hijos-decendientes ul strong {
+  color: red;
+}
+
+.selectores .hermanos-generales .platano ~ li {
+  color: red;
+}
+
+.selectores .hermanos-adyacentes .platano + li {
+  color: red;
+}
+
+.selectores-atributo .attr input[required] {
+  background-color: red;
+}
+
+.selectores-atributo .attr-value input[type='submit'] {
+  background-color: green;
+}
